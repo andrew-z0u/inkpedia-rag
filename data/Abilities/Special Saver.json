@@ -1,0 +1,19 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Special_Saver",
+  "title": "Special Saver",
+  "paragraphs": [
+    "Special Saver is an ability in the Splatoon series.",
+    "Each time a player gets splatted, their special gauge is reduced by a certain amount; Special Saver reduces that amount.",
+    "Special Saver tends to be helpful when players get splatted just before earning a special, or after earning it but before having a chance to use it.",
+    "In the initial version of Splatoon, on respawn the special gauge would always be reduced by 50%, and Special Saver allowed users to reduce this amount by up to 50% of the total special gauge size so that players could lose as little as 0%. As of version 2.7.0, special gauge reduction upon respawn depends on the weapon. Three special gauge depletion classes were added in the 2.7.0 update: 40% depletion, 60% depletion, and 75% depletion. Special Saver was essentially unchanged, as it still allowed users to reduce this amount by up to 50% of the total special gauge size. So, weapons in the 40% class could reduce as low as 0%, weapons in the 60% class could reduce as low as 10%, and weapons in the 75% class could reduce as low as 25%. Because the 40% depletion class has such a low base loss, only one primary ability and eight secondary abilities (or 34 ability points) of Special Saver are necessary to reduce the points lost to 0%.",
+    "Special Saver can be useful with weapons that have a hard time covering turf such as blasters and some long-range shooters, and for special weapons that require a lot of ink to charge such as the Inkzooka, Kraken, and Echolocator.",
+    "Points Lost (relative to Special Gauge filled amount) for each Depletion class:",
+    "- Graph showing special points lost when the player is splatted with a full special gauge.",
+    "Special Saver is the main ability of:",
+    "Splatoon 2 does not have the special gauge depletion classes that were present in the original Splatoon post-2.7.0, so Special Saver is once again used to bring a 50% reduction to as low as 0%. It still works by reducing the loss by up to 50% of the total size of the special gauge. Players who get splatted after using but not completing a Splashdown have their 25% special gauge loss reduced to as low as 0% by Special Saver, and because the base loss of 25% is so low, only five secondary abilities (or 15 ability points) of Special Saver are necessary to reduce the points lost to 0%.",
+    "The effectiveness of Special Saver can be temporarily decreased by Respawn Punisher used by any player.",
+    "Points lost (relative to special gauge filled amount) for when getting splatted after using but not completing a Splashdown, and every other case:",
+    "- In Splatoon 2, Special Saver is the only ability that is unfavored by two gear brands.",
+    "- Special Saver is the only ability that appears in both games where a piece of gear that had it in Splatoon has a different ability in Splatoon 2."
+  ]
+}

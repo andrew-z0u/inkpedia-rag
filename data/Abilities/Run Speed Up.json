@@ -1,0 +1,31 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Run_Speed_Up",
+  "title": "Run Speed Up",
+  "paragraphs": [
+    "Run Speed Up is an ability in the Splatoon series.",
+    "Run Speed Up increases movement speed on the ground while in humanoid form, except when:",
+    "- rolling and painting with a roller or brush",
+    "- while in the opponent's ink",
+    "This ability does not affect how far a player can jump.",
+    "The number of ability points for Run Speed Up can be temporarily increased by the following:",
+    "- Opening Gambit",
+    "- Comeback",
+    "- Drop Roller",
+    "- Haunt in Splatoon",
+    "This ability helps increases chances of survival, as the user is more difficult to hit when moving faster. It also provides benefits for coordination and objective play- however, it can be considered a disadvantage for groups attempting to stay and move together- though, this is usually offset by weapon weight regardless, and can be used to mitigate the negative effects of it to a degree.",
+    "0.95999998 DU/Frame (max) = 100%[1]",
+    "- Bar chart showing mobility with different amounts of Run Speed Up, for all weapons.",
+    "- Graph showing the change in speed with Run Speed Up for shooters, blasters, and splatlings.",
+    "- Stacking Run Speed Up can slightly counter the movement penalty caused by a Disruptor.",
+    "Run Speed Up is the main ability of:",
+    "Run Speed Up also increases the user's movement speed while in the air with the Inkjet.",
+    "0.96 DU/Frame (max) = 100%[2]",
+    "Run speed multiplier while shooting for each weapon in each category. For rollers, the effect is not clear and should not be used.[3][4]",
+    "diff3:= 1 DU/Frame (max) = 100%[2]",
+    "v1:= val1 × val2\nv1 is the Speed Multiplier\nval1 is a Value from the Stacking Table for B, C, D, or E\nval2 is a Run Speed multiplier while 'shooting'",
+    "v2:= v1 ×diff3\nv2 is the Speed in DU/Frame (max)",
+    "To find the run speed while shooting with the Splattershot Jr. with 19 AP (1× Main + 3× Sub), the following can be done.",
+    "- Graph showing the effect of Run Speed Up while firing a weapon.",
+    "- Graph showing the effect of Run Speed Up while running."
+  ]
+}

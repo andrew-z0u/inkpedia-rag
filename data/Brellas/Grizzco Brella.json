@@ -1,0 +1,20 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Grizzco_Brella",
+  "title": "Grizzco Brella",
+  "paragraphs": [
+    "The Grizzco Brella is a Salmon Run and Salmon Run Next Wave rare weapon in Splatoon 2 and Splatoon 3. It appears to be an illegitimately modified[1] Splat Brella.",
+    "The weapon is a rapid firing brella weapon. Unlike other brellas, this weapon has no canopy. Instead, holding down the  button fires continuously, similar to a Shooter or the Undercover Brella. The weapon has an unusually high firing rate for a brella weapon, having over double the firing rate of both the Splat Brella and Undercover Brella.",
+    "The Grizzco Brella is somewhat similar in appearance to the Splat Brella. The shield has been removed, revealing the metal poles usually covered by it. A small green and white lifesaver is strapped around the muzzle. Three yellow pill bottles with white caps and unknown contents are sticking out of the center pole.",
+    "In Splatoon 2, the Grizzco Brella is a rare weapon only available during Salmon Run wildcard rotations. It was first available on 15 October 2017 at 00:00 UTC.",
+    "The Grizzco Brella was available during the following wildcard rotations:",
+    "- Early model of the Brella",
+    "- A player holding the weapon after losing a shift",
+    "The Grizzco Brella returns in Splatoon 3, unchanged from Splatoon 2. It is once again exclusive to wildcard rotations in Salmon Run. It was first available on 19 November 2022 at 00:00 UTC.",
+    "[2]",
+    "In Splatoon 3, the Grizzco Brella was available during the following wildcard rotations:",
+    "- A player in the middle of firing the Grizzco Brella",
+    "- Grizzco Brella 2D icon.",
+    "- A screenshot of the model file for the Grizzco Brella. The placeholder cubes that act as its canopy model are visible.",
+    "- Despite not having a canopy, the files for the Grizzco Brella do contain equivalent models to support having one, like other Brella weapons. Both of these models are shaped as small cubes, hidden inside the shaft of the brella, and are never visible or active during regular gameplay.\nThese models are necessary for the weapon to function, even though they are never actually used. The game crashes as soon as the weapon is loaded, if they are to ever be removed."
+  ]
+}

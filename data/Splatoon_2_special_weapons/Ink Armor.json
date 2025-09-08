@@ -1,0 +1,28 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Ink_Armor",
+  "title": "Ink Armor",
+  "paragraphs": [
+    "The Ink Armor is a special weapon in Splatoon 2. It covers the user and their teammates in breakable armor that protects them from enemy attacks.",
+    "Activating Ink Armor coats the user and their teammates in a skin of their ink and gives them white stars over their eyes. The eye stars show when a player with Ink Armor is hiding in ink.",
+    "When activated, the Ink Armor covers the user and their teammates (regardless of distance) after a short delay, protecting them from damage. The Ink Armor breaks after taking at least 30 damage but can negate up to 100 points of damage if excess damage is dealt on the breaking hit. Additionally, if a player with Ink Armor takes more than 100 damage in a single hit, any damage exceeding 100 points will penetrate the armor and damage the player directly. The maximum amount of overflow damage is 80 points, which requires a hit that deals 180 damage or more (such as a direct explosion from a Splat Bomb or Suction Bomb).",
+    "Ink Armor is applied to all living team members when activated, except to any allies holding the Rainmaker or currently using a Baller or Booyah Bomb. Players can still use their Main, Sub, and Special Weapons while Ink Armor is active. Once a player's Ink Armor breaks or disperses when the Special ends, the player will begin to receive damage as usual.",
+    "Players covered in Ink Armor are visible to opponents due to their glowing eyes. This effect can also be seen when swimming in ink and cannot be mitigated by Ninja Squid, although Ninja Squid will still hide the player's ink ripples while swimming.",
+    "Equipping Special Power Up with Ink Armor increases its duration and decreases how long it takes the special to activate. The following table shows the duration increase when stacking the ability:",
+    "- Upon activation, the player is locked in place for 30 frames, being unable to attack, move, or jump. The player's meter does not deplete during this time. If the user is splatted during this time, Ink Armor is not applied to any living teammates.\nSquid form cannot be entered for 40 frames.",
+    "- After the initial movement lock, it takes 1.5 seconds for Ink Armor to actually be applied, resulting in a total deployment time of two seconds. This can be lowered to a minimum of 0.5 seconds with maximum Special Power Up, resulting in a total deployment time of one second. If the user is splatted during the activation period, Ink Armor is still applied to any living teammates.",
+    "- When there are two seconds left in Ink Armor's duration and it has not been forcibly dispelled, any players with it active are warned by the armor flashing.",
+    "- With no Special Power Up, Ink Armor lasts for 7.5 seconds, but taking into account the activation time, the actual armor effect lasts for 6 seconds.",
+    "- With maximum Special Power Up, Ink Armor lasts for 9.5 seconds, but taking into account the activation time, the actual armor effect lasts for 9 seconds.",
+    "- After Ink Armor's HP is depleted, it takes 12 frames for it to fully wear off. Any damage that is applied during this time is still nullified.\nThis does not apply when Ink Armor's duration runs out.",
+    "- If the user's Ink Armor is broken, their Special Gauge is instantly emptied, allowing for the special to be charged up again more quickly compared to just letting the special end on its own.\nA possible tactic is to sacrifice the armor to a low damaging attack in order to reduce the downtime between using armor for the rest of the team.",
+    "- When players equipped with Object Shredder attack a player using Ink Armor, their damage is multiplied by 3, except for the Sting Ray, which has its damage multiplied by 1.25.\nThis does not count for applying overkill damage, nor affects it in any way. The attack itself must already deal over 100 damage to apply excess damage to the player.",
+    "- Sting Ray's damage is multiplied by 0.445 when attacking Ink Armor.",
+    "- When players with Ink Armor take overkill damage, they are knocked back 600 units over the course of 30 frames.",
+    "For competitive tips about Ink Armor",
+    "- Ink Armor promotional image.",
+    "- A group of Inklings with Ink Armor.",
+    "- Hiding in ink with Ink Armor.",
+    "- Render",
+    "- The visual effects of Ink Armor are very similar to that of an ÜberCharge from Team Fortress 2 as both cover players that are affected with their team color and a metallic sheen as well as make the eyes of any affected players glow."
+  ]
+}

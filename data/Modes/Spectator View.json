@@ -1,0 +1,11 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Spectator_View",
+  "title": "Spectator View",
+  "paragraphs": [
+    "Spectator View is a mode in Splatoon 2  and Splatoon 3 that allows up to two players to spectate a Private Battle by moving the camera.",
+    "Spectator View allows up to two people to spectate the other eight players by moving their camera around the match. The match starts off with an overview of the whole stage, and the camera can be moved and zoomed around. Each player on one team is assigned a directional button and each player on the opposing team is assigned either , , , or . Pressing any of the assigned buttons will follow the chosen player's character. Each player's assigned button is occasionally displayed above their username and always displayed on the top HUD. The spectators can also display a list of all the players playing, including their username and their character's face, the button they are assigned to, their main weapon, and abilities.",
+    "Version 4.0.0 added an automatic spectator camera function that switches focus on players automatically. The update also added additional stats for each player on the top HUD. The numbers above the player icons shows the combined total amount of splats and assists to the left, and the amount of specials used on the right, for each player. The numbers next to the buttons assigned to the players show the amount of points the players have charged for their specials, which disappears once the special gauge is charged or empty. Pressing  toggles the player stats on and off. While waiting in the lobby before the match begins, the spectator has the options to review information related to controls by pressing  if the spectator has not yet confirmed they are \"Ready\" on the match lobby screen.",
+    "- Spectator View controls before version 4.0.0.",
+    "- If one or more spectators play in a Private Battle with all ten players, they appear at the entrance of Deca Tower with the recent battle's neutral ink color. An example would be white for the Hero vs. Villain Splatfest."
+  ]
+}

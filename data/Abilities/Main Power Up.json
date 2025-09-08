@@ -1,0 +1,26 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Main_Power_Up",
+  "title": "Main Power Up",
+  "paragraphs": [
+    "Main Power Up is an ability in Splatoon 2, added in version 4.3.0.",
+    "This ability is available in both primary and secondary gear slots and has different effects on each main weapon, even inside the same weapon class.",
+    "All gear previously available in the shops that had Cold-Blooded were changed to have Main Power Up instead when it was added.",
+    "The effects of Main Power Up are displayed on the Equipment screen on the  info tab for the abilities for the currently selected main weapon. The benefits from Main Power Up vary from weapon to weapon. Weapons which acquire increased damage are incapable of decreasing the number of hits required to splat an undamaged opponent, but the damage total for each hit is slightly increased.",
+    "Some weapons, like the Splattershot Jr., are granted an increase in ink coverage, allowing the user to get their special weapon quicker. This stacks with Special Charge Up but not with Tenacity since the quick special charge only counts when inking the ground.",
+    "[1]",
+    "Main Power Up is the main ability of:",
+    "- A graph showing the damage effect for shooters and dualies.",
+    "- A graph showing the damage effect for chargers and splatlings.",
+    "[2]",
+    "max and mid can be found in the game's parameters as DamageRate_MWPUG_High and DamageRate_MWPUG_Mid. For Main Power Up, min is always 1.0.",
+    "lerpN is an interpolation function where:",
+    "For example, Splat Dualies with two primary Main Power Up slots and one secondary Main Power Up slot.",
+    "This would appear as 32.4 damage in-game.",
+    "After the damage cap is reached, adding more Main Power Up does not increase maximum weapon damage but does continue to increase falloff damage. For example, even if a Splattershot Pro reaches 49.9 damage on direct hits within effective range, the lower-damage hits that occur out of effective range still continue to be boosted by using more Main Power Up.",
+    "- One main slot = 10 AP",
+    "- One sub slot = 3 AP",
+    "- Main Power Up is one of the two abilities to be added to Splatoon 2 post-release. However, it remains the only truly unique post-release Splatoon 2 ability, unlike Bomb Defense Up DX, which combined previously existing abilities.",
+    "- Main Power Up is the only ability in Splatoon 2 to be favored by two brands - Toni Kensa and Annaki.",
+    "- The icon of the Ink Damage color chip bears resemblance to this ability's icon."
+  ]
+}

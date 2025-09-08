@@ -1,0 +1,23 @@
+{
+  "url": "https://splatoonwiki.org/wiki/Damage_Up",
+  "title": "Damage Up",
+  "paragraphs": [
+    "Damage Up is an ability in Splatoon. In Splatoon 2, it was replaced by Main Power Up.",
+    "Damage Up increases damage of the player's main, sub, and special weapons by up to 30%. This allows for an advantage in combat. However, damage cannot go above the highest damage number to take the same number of hits to splat a player at full health. SquidForce gear has a 5x chance of rolling this ability.",
+    "Although having an increased damage output seems like it may give the player more of an advantage in combat situations, it cannot increase the weapon's damage number past its innate \"number of hits to splat\" threshold. For example, the Aerospray MG has a base damage of 24.5, meaning that it takes five hits to splat an enemy. The game will not allow the Aerospray to splat in less than five hits. Therefore, Damage Up will increase the Aerospray's damage to 24.9, so it will still take five hits to splat while having increased damage. This rule applies to all weapons that take more than one hit to splat and deal fixed damage.",
+    "Instead, the advantage Damage Up provides is it will allow the player to be able to use the same number of hits from further away. For example, a Splash-o-matic needs to be within about 2.2 spaces in the test range to be able to splat in four hits, but a full set of Damage Up gear can increase it to its maximum range of 3 spaces.",
+    "Due to this rule programmed into the game, Damage Up appears to have very limited use. It is possible for the ability Defense Up to actually allow a player to take an extra hit from certain weapons. This makes Damage Up ideal for countering opponents with Defense Up, but only if the weapon the player is using is on the lower threshold of the \"number of hits to splat.\"",
+    "Despite this, Damage Up does have several practical uses. Damage Up can reduce the effort needed to splat with variable-damage weapons. For instance, it allows chargers to splat with less charging. For instance, an E-liter 3K requires an 100% charge to splat opponents, but a full set of Damage Up gear can reduce this to 65%. Damage up can get an indirect blaster shot to do a maximum of 99.99 damage. If the target has taken even the tiniest bit of damage, the indirect shot will splat them. Even certain shooters can benefit from Damage Up. For example, with enough Damage Up, the Splattershot Pro's individual shots can have their damage increased to 49.9 damage. While not a two hit kill, it will drastically reduce the time splat a target who is not at full health.",
+    "Without the damage cap rule, these would be the damage caps for different weapons:\nSplash-o-matic, N-ZAP '85, Mini Splatling, Dual Squelcher, Splattershot Jr., Heavy Splatling, and Inkbrush (flick): 36.4, for a 3-hit splat.\nAerospray MG: 31.85, for a 4-hit splat.\nSplattershot and Hydra Splatling: 45.5-still a 3-hit splat.\nSplattershot Pro: 54.6, for a 2-hit splat.\nOctobrush (flick): 48.1-still a 3-hit splat.\nJet Squelcher: 40.3, for a 3-hit splat.\n.52 Gal and .96 Gal: 67.6-still a 2-hit splat.\nL-3 Nozzlenose: 37.7, for a 3-hit splat.\nInkbrush(bump): 26, for a 4-hit splat.\nH-3 Nozzlenose: 53.3, for a 2-hit splat.\nRapid Blaster, Rapid Blaster Pro, and Bamboozler 14 Mk I: 104, for a 1-hit splat.\nOctobrush (bump): 32.5-still a 4-hit splat.\nSlosher: 91-still a 2-hit splat.\nSloshing Machine: 98.8-still a 2-hit splat.\nTri-Slosher: 80.6-still a 2-hit splat.",
+    "For some time after Splatoon's release, blaster splash damage was not damage capped, and it was possible for blasters to one-hit kill players with indirect damage. This was later patched out in version 2.2.0.",
+    "Damage Up is the main ability of:",
+    "- Damage Up reduces the lethal charge time of chargers.",
+    "- Damage Up increases the damage for blasters, having greater effect closer to center of the blast.",
+    "- Damage Up increases the one-hit splatting range of rollers, especially the Dynamo Roller.",
+    "- Damage Up increases the damage per hit of two or more hit splat weapons to limits of 24.9, 33.3, 49.9, or 99.9.",
+    "- Damage Up increases the damage of sub weapons.",
+    "- A set of gear popularized for its Damage Up abilities.",
+    "- An Inkling with 3 mains and 9 subs of Damage Up.",
+    "- An early version of the Damage Up icon seen in a promotional picture of Cooler Heads."
+  ]
+}
