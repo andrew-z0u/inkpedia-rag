@@ -35,38 +35,58 @@ def scrape_page(url):
     if not isinstance(content_div, Tag):
          return page_data
     
-    # Walk through the direct children in order to maintain reading order
-    for element in content_div.children:
-        if not hasattr(element, "name"):
+    # Extract paragraphs
+    for p in content_div.find_all("p", recursive=True):
+        if p.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"]):
             continue
-         
-         # Paragraphs
-        if not isinstance(element, Tag):
-            continue
-        if element.name == "p":
-            if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox",
-                                      "infobox", "navbox", "catlinks"])
-                or element.find_parent("table")):
-                    continue
-            text = element.get_text().strip()
-            if text:
-                page_data["paragraphs"].append(text)
+        text = p.get_text().strip()
+        if text:
+            page_data["paragraphs"].append(text)
 
-    # Bullet lists
-        elif element.name == "ul":
-            if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"])
-                or element.find_parent("table")):
-                    continue
-            items = []
-            for li in element.find_all("li", recursive=False):
-                text = li.get_text().strip()
-                if text:
-                    items.append(f"- {text}")
-                if items:
-                    page_data["paragraphs"].extend(items)
+    # Extract bullet points from all <ul> anywhere inside
+    for ul in content_div.find_all("ul", recursive=True):
+        if ul.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"]):
+            continue
+        for li in ul.find_all("li", recursive=False):
+            text = li.get_text().strip()
+            if text:
+                page_data["paragraphs"].append(f"- {text}")
 
     return page_data
+    
+    # # Walk through the direct children in order to maintain reading order
+    # for element in content_div.children:
+    #     if not hasattr(element, "name"):
+    #         continue
+         
+    #      # Paragraphs
+    #     if not isinstance(element, Tag):
+    #         continue
+    #     if element.name == "p":
+    #         if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox",
+    #                                   "infobox", "navbox", "catlinks"])
+    #             or element.find_parent("table")):
+    #                 continue
+    #         text = element.get_text().strip()
+    #         if text:
+    #             page_data["paragraphs"].append(text)
 
+    # # Bullet lists
+    #     elif element.name == "ul":
+    #         if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"])
+    #             or element.find_parent("table")):
+    #                 continue
+    #         items = []
+    #         for li in element.find_all("li", recursive=False):
+    #             text = li.get_text().strip()
+    #             if text:
+    #                 items.append(f"- {text}")
+    #             if items:
+    #                 page_data["paragraphs"].extend(items)
+
+    page_data["paragraphs"] = extract_paragraphs(content_div)
+
+    return page_data
 
 def save_json(data, folder="data", category_name="misc"):
     """Save scraped page to JSON, skipping if already exists"""
