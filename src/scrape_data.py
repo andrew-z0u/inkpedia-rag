@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 import requests
 import json
 import os
@@ -32,7 +32,7 @@ def scrape_page(url):
 
     # Only look at content contained in mw-parser-outpue
     content_div = soup.find("div", class_="mw-parser-output")
-    if not content_div:
+    if not isinstance(content_div, Tag):
          return page_data
     
     # Walk through the direct children in order to maintain reading order
@@ -41,6 +41,8 @@ def scrape_page(url):
             continue
          
          # Paragraphs
+        if not isinstance(element, Tag):
+            continue
         if element.name == "p":
             if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox",
                                       "infobox", "navbox", "catlinks"])
@@ -66,19 +68,6 @@ def scrape_page(url):
     return page_data
 
 
-    # # Extract all paragraphs in reading order
-    # for p_tag in soup.find_all("p"):
-    #     if (p_tag.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox",
-    #                                   "infobox", "navbox", "catlinks"])
-    #         or p_tag.find_parent("table")):
-    #             continue
-    #     text = p_tag.get_text().strip()
-    #     if text:
-    #         page_data["paragraphs"].append(text)
-
-    # # Extract bullet 
-
-    # return page_data
 def save_json(data, folder="data", category_name="misc"):
     """Save scraped page to JSON, skipping if already exists"""
 
@@ -107,14 +96,16 @@ def categories_to_json(category_url, base_url, category_name):
 
     # Find links in categories
     content_div = soup.find("div", id="mw-pages")
-    if not content_div:
+    if not isinstance(content_div, Tag):
         print("No pages found in this category.")
         return
 
     links = content_div.find_all("a")
     for link in links:
+        if not isinstance(link, Tag):
+            continue
         href = link.get("href")
-        if href and href.startswith("/wiki/") and not href.startswith("/wiki/Category:"):
+        if isinstance(href, str) and href.startswith("/wiki/") and not href.startswith("/wiki/Category:"):
             page_url = base_url + href
             try:
                 page_data = scrape_page(page_url)
