@@ -84,9 +84,9 @@ def scrape_page(url):
     #             if items:
     #                 page_data["paragraphs"].extend(items)
 
-    page_data["paragraphs"] = extract_paragraphs(content_div)
+    # page_data["paragraphs"] = extract_paragraphs(content_div)
 
-    return page_data
+    # return page_data
 
 def save_json(data, folder="data", category_name="misc"):
     """Save scraped page to JSON, skipping if already exists"""
