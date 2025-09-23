@@ -26,67 +26,51 @@ def scrape_page(url):
         "paragraphs": []
     }
 
-    # Page title
-    h1_tag = soup.find("h1", id="firstHeading")
-    page_data["title"] = h1_tag.get_text().strip() if h1_tag else "No title found"
+    # temporarily hold text fragments
+    text_fragments = []
 
-    # Only look at content contained in mw-parser-outpue
+        # Find the main content area
     content_div = soup.find("div", class_="mw-parser-output")
     if not isinstance(content_div, Tag):
-         return page_data
+        return {
+            "url": url,
+            "title": "No content found",
+            "content": ""
+        }
     
-    # Extract paragraphs
-    for p in content_div.find_all("p", recursive=True):
-        if p.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"]):
-            continue
-        text = p.get_text().strip()
-        if text:
-            page_data["paragraphs"].append(text)
+    # Page title
+    h1_tag = soup.find("h1", id="firstHeading")
+    page_title = h1_tag.get_text().strip() if h1_tag else "No title found"
 
-    # Extract bullet points from all <ul> anywhere inside
-    for ul in content_div.find_all("ul", recursive=True):
-        if ul.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"]):
+    # Extract paragraphs
+    for element in content_div.find_all(["p", "ul"], recursive=True):
+        if element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"]):
             continue
-        for li in ul.find_all("li", recursive=False):
-            text = li.get_text().strip()
+
+        if element.name == "p":
+            text = element.get_text().strip()
             if text:
-                page_data["paragraphs"].append(f"- {text}")
+                text_fragments.append(text)
+
+        # Extract bullet points from all <ul> anywhere inside
+        elif element.name == "ul":
+            for li in element.find_all("li", recursive=True):
+                text = li.get_text().strip()
+                if text:
+                    # Prepend with a hyphen to signify a list item
+                    text_fragments.append(f"- {text}")
+
+    # join fragments into one paragraph element
+    content = "\n\n".join(text_fragments)
+
+    page_data = {
+        "url": url,
+        "title": page_title,
+        "content": content
+    }
 
     return page_data
-    
-    # # Walk through the direct children in order to maintain reading order
-    # for element in content_div.children:
-    #     if not hasattr(element, "name"):
-    #         continue
-         
-    #      # Paragraphs
-    #     if not isinstance(element, Tag):
-    #         continue
-    #     if element.name == "p":
-    #         if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox",
-    #                                   "infobox", "navbox", "catlinks"])
-    #             or element.find_parent("table")):
-    #                 continue
-    #         text = element.get_text().strip()
-    #         if text:
-    #             page_data["paragraphs"].append(text)
 
-    # # Bullet lists
-    #     elif element.name == "ul":
-    #         if (element.find_parent(class_=["gallerybox", "gallerytext", "thumb", "infobox", "navbox", "catlinks"])
-    #             or element.find_parent("table")):
-    #                 continue
-    #         items = []
-    #         for li in element.find_all("li", recursive=False):
-    #             text = li.get_text().strip()
-    #             if text:
-    #                 items.append(f"- {text}")
-    #             if items:
-    #                 page_data["paragraphs"].extend(items)
-
-    # page_data["paragraphs"] = extract_paragraphs(content_div)
-
-    # return page_data
 
 def save_json(data, folder="data", category_name="misc"):
     """Save scraped page to JSON, skipping if already exists"""

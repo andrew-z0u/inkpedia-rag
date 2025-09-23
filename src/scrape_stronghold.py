@@ -6,31 +6,39 @@ import os
 def scrape_stronghold_data(url):
     """
     Scrape a Splatoon Stronghold guide and return a JSON-like dictionary
-    with the same format as scrape_page (title + paragraphs in order).
+    with all content combined into a single text block.
     """
     response = requests.get(url)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
-    page_data = {
-        "url": url,
-        "title": "",
-        "paragraphs": []
-    }
+    text_fragments = []
 
-    # Page title (usually in <h1>)
     h1_tag = soup.find("h1")
-    page_data["title"] = h1_tag.get_text(strip=True) if h1_tag else "No title found"
+    page_title = ' '.join(h1_tag.stripped_strings) if h1_tag else "No title found"
 
-    # Main content container (Stronghold uses <article> or .post-content)
     content_div = soup.find("article") or soup.find("div", class_="post-content")
 
-    # Extract paragraphs
-    for elem in content_div.descendants:
-        if elem.name in ["h2", "h3", "p"]:
-            text = elem.get_text(strip=True)
-            if text:
-                page_data["paragraphs"].append(text)
+    if content_div:
+        for elem in content_div.find_all(["h2", "h3", "p"]):
+            text = " ".join(elem.stripped_strings)
+            if not text:
+                continue
+
+            if elem.name == "h2":
+                text_fragments.append(f"## {text}")
+            elif elem.name == "h3":
+                text_fragments.append(f"### {text}")
+            else:
+                text_fragments.append(text)
+
+    full_content = "\n\n".join(text_fragments)
+
+    page_data = {
+        "url": url,
+        "title": page_title,
+        "content": full_content
+    }
 
     return page_data
 
